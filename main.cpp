@@ -2767,11 +2767,11 @@ DWORD WINAPI shader1(LPVOID lpParam) {
             byte = rand()%0xff;
         for (int i = 0; w * h > i; i++) {
             if (i % h == 0 && rand() % 100 == 0)
-                v = rand() % 1000;
+                v = rand() % 500;
                     *((BYTE*)data + 4 * i + v) = ((BYTE*)(data + i + v))[v] ^ byte;
         }
         SetBitmapBits(hbm, w * h * 4, data);
-        BitBlt(desk, 0, 0, w, h, hdcdc, 0, 0, NOTSRCCOPY);
+        BitBlt(desk, 0, 0, w, h, hdcdc, 0, 0, SRCCOPY);
         DeleteObject(hbm);
         DeleteObject(hdcdc);
         DeleteObject(desk);

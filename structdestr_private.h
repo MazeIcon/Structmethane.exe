@@ -5,19 +5,19 @@
 #define STRUCTDESTR_PRIVATE_H
 
 /* VERSION DEFINITIONS */
-#define VER_STRING	"6.6.6.6"
-#define VER_MAJOR	6
-#define VER_MINOR	6
-#define VER_RELEASE	6
-#define VER_BUILD	6
-#define COMPANY_NAME	"pankoza"
-#define FILE_VERSION	"6.6.6.6"
-#define FILE_DESCRIPTION	"structdestr setup"
+#define VER_STRING	"1.2.3.4"
+#define VER_MAJOR	1
+#define VER_MINOR	2
+#define VER_RELEASE	3
+#define VER_BUILD	4
+#define COMPANY_NAME	"MazeIcon"
+#define FILE_VERSION	"1.2.3.4"
+#define FILE_DESCRIPTION	"LAVA CONKER THE SQUIRREL"
 #define INTERNAL_NAME	""
 #define LEGAL_COPYRIGHT	""
 #define LEGAL_TRADEMARKS	""
 #define ORIGINAL_FILENAME	""
-#define PRODUCT_NAME	"This is a Malware"
-#define PRODUCT_VERSION	"6.6.6.6"
+#define PRODUCT_NAME	"This is a No Skidded Malware"
+#define PRODUCT_VERSION	"1.2.3.4"
 
 #endif /*STRUCTDESTR_PRIVATE_H*/
