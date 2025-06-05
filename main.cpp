@@ -2767,7 +2767,7 @@ DWORD WINAPI shader1(LPVOID lpParam) {
             byte = rand()%0xff;
         for (int i = 0; w * h > i; i++) {
             if (i % h == 0 && rand() % 100 == 0)
-                v = rand() % 1500;
+                v = rand() % 1000;
                     *((BYTE*)data + 4 * i + v) = ((BYTE*)(data + i + v))[v] ^ byte;
         }
         SetBitmapBits(hbm, w * h * 4, data);
@@ -2839,7 +2839,7 @@ DWORD WINAPI shader3(LPVOID lpParam) {
             byte = rand()%0xff;
         for (int i = 0; w * h > i; i++) {
             if (i % h && rand() % 110)
-                v = rand() % 150;
+                v = rand() % 45;
             *((BYTE*)data + 4 * i + v) -= 10;
         }
         SetBitmapBits(hbm, w * h * 4, data);
@@ -2964,8 +2964,8 @@ DWORD WINAPI shader4(LPVOID lpParam) {
             byte = rand()%0xff;
         for (int i = 0; w * h > i; ++i) {
             if (!(i % h) && !(rand() % 110))
-                v = rand() % 24;
-            *((BYTE*)data + 4 * i + v) += 15;
+                v = rand() % 30;
+            *((BYTE*)data + 4 * i + v) += 10;
         }
         SetBitmapBits(hbm, w * h * 4, data);
         BitBlt(desk, 0, 0, w, h, hdcdc, 0, 0, NOTSRCCOPY);
